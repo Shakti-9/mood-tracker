@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet " href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mood Tracker</h1>
+            <p class="subtitle">Track your emotions and visualize your journey</p>
+        </header>
+
+        <section class="mood-selector">
+            <h2>How are you feeling today?</h2>
+            <div class="emoji-container">
+                <button class="emoji-btn happy" data-mood="happy" data-color="var(--happy)">😊</button>
+                <button class="emoji-btn sad" data-mood="sad" data-color="var(--sad)">😢</button>
+                <button class="emoji-btn angry" data-mood="angry" data-color="var(--angry)">😠</button>
+                <button class="emoji-btn calm" data-mood="calm" data-color="var(--calm)">😌</button>
+                <button class="emoji-btn excited" data-mood="excited" data-color="var(--excited)">🤩</button>
+                <button class="emoji-btn tired" data-mood="tired" data-color="var(--tired)">😴</button>
+                <button class="emoji-btn neutral" data-mood="neutral" data-color="var(--neutral)">😐</button>
+            </div>
+        </section>
+
+        <section class="calendar-container">
+            <div class="calendar-header">
+                <div class="month-nav">
+                    <button class="nav-btn" id="prev-month">❮</button>
+                    <h3 class="current-month" id="current-month">Month Year</h3>
+                    <button class="nav-btn" id="next-month">❯</button>
+                </div>
+            </div>
+
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+
+            <div class="days" id="calendar-days"></div>
+        </section>
+
+        <section class="stats-container">
+            <h3 class="stats-title">Your Mood Statistics</h3>
+            <div class="stats-grid" id="stats-grid">
+                <!-- Stats will be populated by JS -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+       
+    </script>
+</body>
+</html>
